@@ -12,6 +12,10 @@ import MapKit
 class MapViewController: UIViewController {
     
     var mapView: MKMapView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 
     override func loadView() {
         // Create a map view
@@ -26,10 +30,8 @@ class MapViewController: UIViewController {
         
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         
-        // segmentedControl.addTarget(self, action: Selector(("mapTypeChanged:")), for: .valueChanged)
+        segmentedControl.addTarget(self, action: #selector(MapViewController.mapTypeChanged(_:)), for: .valueChanged)
         
-        segmentedControl.addTarget(self, action: Selector(("mapTypeChanged:")), for: .valueChanged)
-
         view.addSubview(segmentedControl)
         
         let topConstraint = segmentedControl.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 8)
@@ -43,7 +45,7 @@ class MapViewController: UIViewController {
  
     }
     
-    func mapTypeChanged(segControl: UISegmentedControl) {
+    func mapTypeChanged(_ segControl: UISegmentedControl) {
         switch segControl.selectedSegmentIndex {
         case 0:
             mapView.mapType = .standard
@@ -55,5 +57,4 @@ class MapViewController: UIViewController {
             break
         }
     }
-
 }

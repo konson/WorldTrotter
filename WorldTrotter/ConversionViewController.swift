@@ -6,7 +6,6 @@
 //  Copyright © 2016 Apperator. All rights reserved.
 // 
 
-// add this to git!!
 
 import UIKit
 
@@ -81,6 +80,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
             let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
             let replacementTextHasDecimalSeparator = string.range(of: ".")
+        
         
             if existingTextHasDecimalSeparator != nil &&
                 replacementTextHasDecimalSeparator != nil {
