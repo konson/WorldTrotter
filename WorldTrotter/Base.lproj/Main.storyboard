@@ -133,8 +133,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="1R2-iR-XD6" kind="relationship" relationship="viewControllers" id="8Fl-cH-32T"/>
                         <segue destination="I40-y0-eDO" kind="relationship" relationship="viewControllers" id="rcq-NI-bJf"/>
+                        <segue destination="1R2-iR-XD6" kind="relationship" relationship="viewControllers" id="8Fl-cH-32T"/>
                         <segue destination="Y9r-VZ-5XI" kind="relationship" relationship="viewControllers" id="ck0-Zm-322"/>
                     </connections>
                 </tabBarController>
