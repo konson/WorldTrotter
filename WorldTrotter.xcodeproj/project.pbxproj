@@ -15,6 +15,7 @@
 		51A93C6A1D817F9A007D9532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A93C681D817F9A007D9532 /* LaunchScreen.storyboard */; };
 		51B0F3421D89C721005D0982 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0F3411D89C721005D0982 /* ConversionViewController.swift */; };
 		51E512221D8A2A9500FD9649 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E512211D8A2A9500FD9649 /* WebViewController.swift */; };
+		51E512241D8A53C300FD9649 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E512231D8A53C300FD9649 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		51A93C6B1D817F9A007D9532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51B0F3411D89C721005D0982 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		51E512211D8A2A9500FD9649 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		51E512231D8A53C300FD9649 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51E512241D8A53C300FD9649 /* CoreLocation.framework in Frameworks */,
 				510BC6D11D81D49800AD3270 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +48,7 @@
 		510BC6CF1D81D49800AD3270 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51E512231D8A53C300FD9649 /* CoreLocation.framework */,
 				510BC6D01D81D49800AD3270 /* MapKit.framework */,
 			);
 			name = Frameworks;
