@@ -15,7 +15,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     var mapView: MKMapView!
     let locationManager = CLLocationManager()
-    let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
+    //let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +29,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         findMeButton.setTitleColor(UIColor.blue, for: .normal)
         findMeButton.addTarget(self, action: #selector(MapViewController.findMeButtonPressed), for: UIControlEvents.touchUpInside)
         self.view.addSubview(findMeButton)
-
-
     }
 
     override func loadView() {
@@ -40,6 +39,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         view = mapView
         
         // Set up segment control for 3 views
+        let standardString = NSLocalizedString("Standard", comment: "Standrad map view")
+        let hybridString = NSLocalizedString("Hybrid", comment: "Hybrid map view")
+        let satelliteString = NSLocalizedString("Satellite", comment: "Satellite map view")
+        let segmentedControl = UISegmentedControl(items: [standardString, hybridString, satelliteString])
 
         segmentedControl.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         segmentedControl.selectedSegmentIndex = 0

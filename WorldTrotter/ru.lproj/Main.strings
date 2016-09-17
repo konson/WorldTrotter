@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "is really"; ObjectID = "JMn-6e-G5s"; */
+"JMn-6e-G5s.text" = "действительно";
+
+/* Class = "UILabel"; text = "degrees Celcius"; ObjectID = "OzW-Ca-me2"; */
+"OzW-Ca-me2.text" = "градусов Цельсия";
+
+/* Class = "UITabBarItem"; title = "Web"; ObjectID = "Q6N-cv-UUA"; */
+"Q6N-cv-UUA.title" = "Web";
+
+/* Class = "UILabel"; text = "???"; ObjectID = "Xod-He-5O8"; */
+"Xod-He-5O8.text" = "???";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "Yb6-xg-fdm"; */
+"Yb6-xg-fdm.title" = "карта";
+
+/* Class = "UITabBarItem"; title = "Convert"; ObjectID = "b4n-Da-D0a"; */
+"b4n-Da-D0a.title" = "преобразовать";
+
+/* Class = "UITextField"; placeholder = "value"; ObjectID = "bvu-dE-Ejf"; */
+"bvu-dE-Ejf.placeholder" = "номер";
+
+/* Class = "UILabel"; text = "degrees Farehnheit"; ObjectID = "yO1-N4-s2o"; */
+"yO1-N4-s2o.text" = "градус Фаренгейта";
